@@ -2,6 +2,10 @@
 
 Automatic sending of transactions on the [Mina Protocol](https://minaprotocol.com/)
 
+### Important!
+
+Before using this script, you must have imported `coda accounts import -privkey-path $KEYPATH` and unlocked `coda accounts unlock -public-key $MINA_KEY` keys.
+
 ### Download the start.sh file from the repository to your server where Mina's node is installed and take the following steps:
 
 * Set the number of transactions to send: 
@@ -16,8 +20,8 @@ amount=$((1 + $RANDOM % 3))
 Where `1 + $RANDOM % 3` - range is from 1 to 3 tokens;
 * Set receiver and sender addresses:
 ```
--receiver B62qqtwygyMDh56idVbEAWRzaJCMFg3EXBnUcohZbBemaH6W2HmmG3b
--sender B62qpSphT9prqYrJFio82WmV3u29DkbzGprLAM3pZQM2ZEaiiBmyY82
+senderaddr="B62qpSphT9prqYrJFio82WmV3u29DkbzGprLAM3pZQM2ZEaiiBmyY82"
+receiveraddr="B62qqtwygyMDh56idVbEAWRzaJCMFg3EXBnUcohZbBemaH6W2HmmG3b"
 ```
 
 ### Preparing to launch
@@ -26,3 +30,5 @@ Where `1 + $RANDOM % 3` - range is from 1 to 3 tokens;
 2. Run the script `./start.sh`
 
 Done
+
+![Screenshot of transactions](scr.png)
