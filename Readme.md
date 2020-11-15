@@ -31,4 +31,4 @@ receiveraddr="B62qqtwygyMDh56idVbEAWRzaJCMFg3EXBnUcohZbBemaH6W2HmmG3b"
 
 Done
 
-![Screenshot of transactions](scr.png)
+![Screenshot of transactions](img\scr.png)
