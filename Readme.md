@@ -8,6 +8,9 @@ Before using this script, you must have imported `coda accounts import -privkey-
 
 ### Download the start.sh file from the repository to your server where Mina's node is installed and take the following steps:
 
+Link:
+```wget -O ~/start.sh https://github.com/icohigh/mina-transactions-automation/blob/main/start.sh```
+
 * Set the number of transactions to send: 
 ```
 for ((i = 0 ; i < 300 ; i++));
