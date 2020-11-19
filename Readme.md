@@ -9,7 +9,7 @@ Before using this script, you must have imported `coda accounts import -privkey-
 ### Download the start.sh file from the repository to your server where Mina's node is installed and take the following steps:
 
 Link:
-```wget -O ~/start.sh https://github.com/icohigh/mina-transactions-automation/blob/main/start.sh```
+```git clone https://github.com/icohigh/mina-transactions-automation.git```
 
 * Set the number of transactions to send: 
 ```
@@ -29,8 +29,8 @@ receiveraddr="B62qqtwygyMDh56idVbEAWRzaJCMFg3EXBnUcohZbBemaH6W2HmmG3b"
 
 ### Preparing to launch
 
-1. Set read permissions `chmod 700 ./start.sh`
-2. Run the script `./start.sh`
+1. Set read permissions `chmod 700 $HOME/mina-transactions-automation/start.sh`
+2. Run the script `$HOME/mina-transactions-automation/start.sh`
 
 Done
 
