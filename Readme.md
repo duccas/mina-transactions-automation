@@ -14,19 +14,19 @@ Download:
 Change data:
 ```nano $HOME/mina-transactions-automation/start.sh```
 
-1. Set the number of transactions to send: 
+### 1. Set the number of transactions to send: 
 
 ```for ((i = 0 ; i < 300 ; i++));```
 
 Where 300 is the number of transactions;
 
-2.  Set the range of Ming tokens sent:
+### 2.  Set the range of Ming tokens sent:
 
 ```amount=$((1 + $RANDOM % 3))```
 
 Where `1 + $RANDOM % 3` - range is from 1 to 3 tokens;
 
-3.  Set receiver and sender addresses:
+### 3.  Set receiver and sender addresses:
 
 ```senderaddr="B62qpSphT9prqYrJFio82WmV3u29DkbzGprLAM3pZQM2ZEaiiBmyY82"```
 ```receiveraddr="B62qqtwygyMDh56idVbEAWRzaJCMFg3EXBnUcohZbBemaH6W2HmmG3b"```
