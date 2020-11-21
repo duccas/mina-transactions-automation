@@ -19,11 +19,13 @@ Change data:
 ```for ((i = 0 ; i < 300 ; i++));```
 
 Where 300 is the number of transactions;
+
 2.  Set the range of Ming tokens sent:
 
 ```amount=$((1 + $RANDOM % 3))```
 
 Where `1 + $RANDOM % 3` - range is from 1 to 3 tokens;
+
 3.  Set receiver and sender addresses:
 
 ```senderaddr="B62qpSphT9prqYrJFio82WmV3u29DkbzGprLAM3pZQM2ZEaiiBmyY82"```
