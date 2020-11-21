@@ -16,15 +16,16 @@ Change data:
 
 ### 1. Set the number of transactions to send: 
 
-```for ((i = 0 ; i < 300 ; i++));```
+```for ((i = 0 ; i < 100 ; i++));```
 
-Where 300 is the number of transactions;
+Where 100 is the number of transactions;
 
-### 2.  Set the range of Ming tokens sent:
+### 2.  Set the range of Mina tokens sent:
 
-```amount=$((1 + $RANDOM % 3))```
+```amount=$(( $RANDOM %100 ))```
+```amount=$( bc <<< "scale=9;$amount/333" )```
 
-Where `1 + $RANDOM % 3` - range is from 1 to 3 tokens;
+Where `100/333=0.3` - range is from 0 to 0.3 tokens;
 
 ### 3.  Set receiver and sender addresses:
 
