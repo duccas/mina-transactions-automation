@@ -6,8 +6,9 @@ receiveraddr="B62qqtwygyMDh56idVbEAWRzaJCMFg3EXBnUcohZbBemaH6W2HmmG3b"
 echo ">>>>>>>>Start Sending Transaction<<<<<<<<"
 echo ""
 
-for ((i = 0 ; i < 50 ; i++)); do
-    amount=$((1 + $RANDOM % 3))
+for ((i = 0 ; i < 100 ; i++)); do
+    amount=$(( $RANDOM %100 ))
+    amount=$( bc <<< "scale=9;$amount/333" )
 
     fee=$(( $RANDOM %100 ))
     fee=$( bc <<< "scale=9;$fee/333" )
@@ -18,7 +19,7 @@ for ((i = 0 ; i < 50 ; i++)); do
          -receiver $receiveraddr \
          -fee $fee \
          -sender $senderaddr
-    sleep $[ (10 + $RANDOM % 60 ) ]s
+    sleep $[ (5 + $RANDOM % 60 ) ]s
 
 echo "----------------------------"
 done
